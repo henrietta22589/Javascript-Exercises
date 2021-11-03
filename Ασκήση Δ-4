@@ -1,0 +1,34 @@
+/*i give as start value, for N, the number Zero(0)*/
+let n = 0;
+//For the calculation of the average i need, to know the number of odd and even
+//numbers, so for that, i am creating a counter_1+counter_2, in which i give also as
+//a start value, the number zero(0)
+let counter_1 = 0;
+let counter_2 = 0;
+/*i give in the value of sum_1+sum_2, as a start value. The number Zero(0)*/
+let sum_1 = 0;
+let sum_2 = 0;
+/*the upper value will be a random value, so i will construct a value with math.random()*/
+let i = (Math.random() * 100);
+/*the values of the average is: ave_1 and ave_2*/
+let ave_1;
+let ave_2;
+do {
+    n++;
+    if ((n % 2 == 1)) {
+        sum_1 = sum_1 + n;
+        counter_1++;
+    }
+    else {
+        sum_2 = sum_2 + n;
+        counter_2++;
+    }
+} while (n <= i);
+console.log("The sum of the odd numbers is\n" + sum_1);
+console.log("The number of the odd numbers is\n" + counter_1);
+ave_1 = (sum_1 / counter_1);
+console.log("the average of the odd numbers is:\n" + ave_1);
+console.log("The sum of the even numbers is\n" + sum_2);
+console.log("The number of the even numbers is\n" + counter_2);
+ave_2 = (sum_2 / counter_2);
+console.log("the average of the even numbers is:\n" + ave_2);
