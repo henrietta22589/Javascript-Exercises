@@ -1,0 +1,51 @@
+let i = 0;                      
+
+while (i <= 99) {
+    i++;
+    console.log(i);
+}
+_______________________ Below is the same Exercise (Δ-1), solved with the use of do...while()___________________________
+    let i = 0;
+do {
+    i++
+    console.log(i);
+} while (i<=99);
+_________________________From this part, will start the solution of the exercise(Δ-2)_______________
+
+let i = 0;
+do {
+    i++;
+    if ((i%2==1)) {
+        console.log(i);
+    }
+    
+} while (i<= 999);
+_________________________From this part, will start the solution of the exercise(Δ-3)__I chose in this exercise as n, an odd number. More specifically i chose the n
+to be equal with the value of 67, which is the age of my father,in 2021.
+
+
+let n=0;
+let sum = 0;
+let m_o;
+let counter = 0;
+let mult = 1;
+do {
+    n++;
+    if ((n % 2) == 1) {
+        console.log(n);
+        sum = sum + n;
+        counter++;
+        mult = mult * n;
+    }
+} while (n <= 66);
+console.log("the sum of the odd numbers is:\n" + sum);
+console.log("the result of the multiplication of the odd numbers is:\n" + mult);
+console.log("The number of the odd numbers is:\n" + counter);
+m_o = (sum / counter);
+console.log("The average is:" + m_o);
+
+
+
+
+
+
